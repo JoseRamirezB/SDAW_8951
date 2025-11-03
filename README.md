@@ -1,0 +1,116 @@
+# Proyecto SDAW_8951
+
+## Descripción del proyecto
+
+Este proyecto forma parte de la práctica de la asignatura **SDAW**.\
+Consiste en una pequeña aplicación web servida con **Node.js** y
+**Express**, que muestra un mensaje al usuario con mi nombre (José Luis Ramírez Barrios) al pulsar un botón.
+
+------------------------------------------------------------------------
+
+## Estructura del proyecto
+
+    /SDAW_8951
+    ├── index.html       # Página principal
+    ├── script.js        # Código JavaScript que muestra el mensaje
+    ├── server.js        # Servidor con Express
+    ├── package.json     # Configuración del proyecto Node.js
+    ├── .gitignore       # Archivos ignorados por Git
+    └── README.md        # Documentación del proyecto
+
+------------------------------------------------------------------------
+
+## Comandos utilizados
+
+### Node.js
+
+``` bash
+# Inicializar el proyecto Node.js
+npm init -y
+
+# Instalar Express como dependencia
+npm install express
+
+# Iniciar el servidor
+npm start
+```
+
+------------------------------------------------------------------------
+
+## Fragmentos de código relevantes
+
+### `index.html`
+
+``` html
+<button id="saludoBtn">Haz clic aquí</button>
+<script src="script.js"></script>
+```
+
+### `script.js`
+
+``` js
+document.getElementById("saludoBtn").addEventListener("click", function() {
+  alert("Hola José Luis Ramírez Barrios");
+});
+```
+
+### `server.js`
+
+``` js
+const express = require('express');
+const app = express();
+const path = require('path');
+const PORT = 3000;
+
+app.use(express.static(__dirname));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+});
+```
+
+------------------------------------------------------------------------
+
+## Conclusiones personales
+
+Durante esta práctica he aprendido a: 
+- Crear la estructura básica de un
+proyecto Node.js.
+- Realizar el control de versiones de un proyecto manejando repositorios local y remotos, así como la creación de ramas y de pull request.
+- Levantar un proyecto web en local haciendo uso de Node JS.
+
+Además, he aprendido la importancia a formatear documentación de proyectos en READMEs y a usar `.gitignore` para evitar subir archivos innecesarios al
+repositorio.
+
+------------------------------------------------------------------------
+
+## Ejecución del proyecto
+
+1.  Clonar o descargar este proyecto.
+
+2.  Abrir una terminal dentro de la carpeta `SDAW_8951`.
+
+3.  Instalar las dependencias ejecutando:
+
+    ``` bash
+    npm install
+    ```
+
+4.  Iniciar el servidor con:
+
+    ``` bash
+    npm start
+    ```
+
+5.  Abrir el navegador y acceder a:
+
+        http://localhost:3000
+
+
+## Autor
+
+**José Luis Ramírez Barrios**
