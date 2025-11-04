@@ -1,5 +1,5 @@
 // server.js
-// Servidor básico con Express
+// Servidor básico con Express que levanta la aplicación en el puerto 3000
 
 const express = require('express');
 const path = require('path');
