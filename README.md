@@ -74,7 +74,12 @@ app.listen(PORT, () => {
 ```
 
 ------------------------------------------------------------------------
-
+## Información técnica añadida desde rama 2 
+5327259 (HEAD -> rama2_JoseLuisRamirez, main) Revert "chore: Añadido log para depuración en script.js"
+0531076 chore: Añadido log para depuración en script.js
+7f23b57 feat: Añadido párrafo en index.html
+97cd66f docs: Modificar comentario informativo en server.js
+1072718 (origin/main) Primer commit del repositorio SDAW_8951
 ## Conclusiones personales
 
 Durante esta práctica he aprendido a: 
