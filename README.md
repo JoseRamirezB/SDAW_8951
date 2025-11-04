@@ -34,7 +34,16 @@ npm install express
 # Iniciar el servidor
 npm start
 ```
+## Información técnica añadida desde rama 1
 
+En esta sección se describen los principales comandos de Git utilizados durante la práctica:
+
+- git init: Sirve para inicializar un nuevo repositorio local en el directorio actual.
+- git add: Permite añadir ficheros al área de preparación (staging area) para incluirlos en el próximo commit.
+- git commit: Registra los cambios añadidos en el repositorio, creando un punto en el historial de commits.
+- git branch: Sirve para crear, listar o eliminar ramas en el repositorio.
+- git merge: Combina los cambios realizados en una rama en otra.
+- git push: Envía los commits locales al repositorio remoto.
 ------------------------------------------------------------------------
 
 ## Fragmentos de código relevantes
